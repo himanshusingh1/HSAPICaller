@@ -1,0 +1,6 @@
+framework module HSAPICaller {
+  umbrella header "HSAPICaller-umbrella.h"
+
+  export *
+  module * { export * }
+}
