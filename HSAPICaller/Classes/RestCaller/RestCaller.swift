@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 public class HSAPICall<Target: HSTarget, RESPONSE>: AsyncOperation , Cancellable where RESPONSE : Codable {
     public var decodedResultCallback: ((Result<RESPONSE, Error>) -> Void )?
     public var moyaResponseCallback: ((Result<Moya.Response, Moya.MoyaError>) -> Void )?

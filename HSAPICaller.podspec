@@ -8,35 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSAPICaller'
-  s.version          = '0.1.0'
+  s.version          = '1.0.10'
   s.summary          = 'A short description of HSAPICaller.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+       HSAPICaller is a wrapper written upon Moya (ref: Moya ) to make API Calls with ease, and make it cacheable without adding any extra lines of code.
                        DESC
 
-  s.homepage         = 'https://github.com/Himanshu Singh/HSAPICaller'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/himanshusingh1/HSAPICaller'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Himanshu Singh' => 'himanshusingh@hotmail.co.uk' }
-  s.source           = { :git => 'https://github.com/Himanshu Singh/HSAPICaller.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/himanshusingh1/HSAPICaller.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
-
+  s.swift_versions = '5.0.0'
   s.source_files = 'HSAPICaller/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'HSAPICaller' => ['HSAPICaller/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'Moya'
 end
