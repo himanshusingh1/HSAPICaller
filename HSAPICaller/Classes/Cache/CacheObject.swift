@@ -29,7 +29,7 @@ func cacheDirectory() -> String {
 }
 func deletecache(identifier: String) {
     guard let urlString = append(toPath: cacheDirectory(), withPathComponent: identifier) else { return }
-    guard let url = URL(string: urlString) else { return }
+    guard let url = URL(fileURLWithPath: urlString) else { return }
     Log("Deleting file \(url)")
     try? FileManager.default.removeItem(at: url)
 }
